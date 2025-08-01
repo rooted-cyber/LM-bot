@@ -5,7 +5,7 @@ pys() {
 rm a.py > /dev/null 2>&1
 cat >> a.py << EOF
 print("\033[1;96m (1) Leech bot \t\t \033[1;93m(2) Mirror bot (wzml repo)\n")
-print("\033[1;96m select >> \033]0m")
+input("\033[1;96m select >> \033]0m")
 EOF
 }
 command -v lolcat || pip3 install lolcat
