@@ -110,8 +110,6 @@ sudo docker build .
 tof Leech | lolcat
 pys
 sudo chmod 777 a.py > /dev/null 2>&1
-python3 a.py
-#r="\033[0mm"
 printf %s " Select : "
 
 read m
