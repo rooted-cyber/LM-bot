@@ -88,7 +88,7 @@ with open("token.pickle","wb") as tp:
   tp.write(yt.content)
 
 EOF
-sudo chmod 777 a.py
+sudo chmod 777 a.py > /dev/null 2>&1
 python3 a.py
 cd mirror
 git pull
@@ -96,9 +96,9 @@ sudo docker build .
 }
 tof Leech | lolcat
 pys
-sudo chmod 777 a.py
+sudo chmod 777 a.py > /dev/null 2>&1
 python3 a.py
-echo -e -n "\033[1;95m Select :\033[0m "
+printf %s "\033[1;96m Select :\033[0m "
 
 read m
 case $m in
