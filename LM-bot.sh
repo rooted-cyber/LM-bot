@@ -1,9 +1,10 @@
+#!/bin/bash
 command -v msg || bash -c "$(curl -fsSl https://gist.githubusercontent.com/rooted-cyber/ce6248bd681844d35a12bd210989eb89/raw/install)"
 
 pys() {
 rm a.py > /dev/null 2>&1
 cat >> a.py << EOF
-print("\033[1;96m (1) Leech bot \t\t \033[1;93m(2) Mirror bot (wzml repo)\n")
+print("\033[1;96m (1) aLeech bot \t\t \033[1;93m(2) Mirror bot (wzml repo)\n")
 EOF
 }
 command -v lolcat || pip3 install lolcat
