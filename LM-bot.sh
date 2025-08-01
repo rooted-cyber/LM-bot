@@ -1,5 +1,15 @@
 command -v msg || bash -c "$(curl -fsSl https://gist.githubusercontent.com/rooted-cyber/ce6248bd681844d35a12bd210989eb89/raw/install)"
-
+uh() {
+rm b.py > /dev/null 2>&1
+cat >> b.py << EOF
+import sys
+from os import listdir as ls
+if ls("/sdcard"):
+  print("\033[1;91m Not support in Termux\n\n")
+  sys.exit()
+EOF
+python b.py
+}
 pys() {
 rm a.py > /dev/null 2>&1
 cat >> a.py << EOF
@@ -10,6 +20,7 @@ python3 a.py
 }
 command -v lolcat || pip3 install lolcat
 lb() {
+uh
 git clone https://github.com/SilentDemonSD/WZML-X mirror > /dev/null 2>&1
 rm a.py > /dev/null 2>&1
 cat >> a.py << EOF
