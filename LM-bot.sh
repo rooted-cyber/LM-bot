@@ -48,7 +48,7 @@ sudo docker build .
 tof Leech | lolcat
 pys
 
-echo -e -n "\033[1;95m Select :\033[0m "
+echo -e -n "\n\n\033[1;95m Select :\033[0m "
 
 read m
 case $m in
