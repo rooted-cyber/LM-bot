@@ -1,9 +1,11 @@
 #!/bin/bash
 command -v msg || bash -c "$(curl -fsSl https://gist.githubusercontent.com/rooted-cyber/ce6248bd681844d35a12bd210989eb89/raw/install)"
 
-vheck() {
+check() {
 rm b.py > /dev/null 2>&1
-cat l>> b.py << EOF
+cat >> b.py << EOF
+if ls("/sdcard"):
+
 pys() {
 rm a.py > /dev/null 2>&1
 cat >> a.py << EOF
