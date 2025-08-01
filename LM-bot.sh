@@ -2,7 +2,6 @@
 command -v msg || bash -c "$(curl -fsSl https://gist.githubusercontent.com/rooted-cyber/ce6248bd681844d35a12bd210989eb89/raw/install)"
 command -v lolcat || pip3 install lolcat
 lb() {
-check
 git clone https://github.com/SilentDemonSD/WZML-X mirror > /dev/null 2>&1
 rm a.py > /dev/null 2>&1
 cat >> a.py << EOF
@@ -26,11 +25,8 @@ fcoc = f"""
 BOT_TOKEN = "{ah}"                          # Require restart after changing it while bot running
 OWNER_ID = "{ai}"                               # Require restart after changing it while bot running
 TELEGRAM_API = "2944318"                           # Require restart after changing it while bot running
-TELEGRAM_HASH = "e9746721493a910d201d898b4329da8f"                          # Require restart after changing it while bot running
-JD_EMAIL = "rootedcyber@gmail.com"
-JD_PASS = "Mahphujalam123###"
-DOWNLOAD_DIR = "/usr/src/app/downloads/"    # Require restart after changing it while bot running
-"""
+TELEGRAM_HASH = "e9746721493a910d201d898b4329da8f"                          # Require restart after changing it while bot k
+ """
 cd("mirror")
 with open("config.env" , "w") as con:
   con.write(fcoc)
@@ -38,12 +34,9 @@ with open("config.env" , "w") as con:
 EOF
 sudo chmod 777 a.py
 python3 a.py
-cd mirror
-git pull
 sudo docker build .
 }
 mmb() {
-check
 git clone https://github.com/my-fork-repo/mirror-leech-telegram-bot mirror > /dev/null 2>&1
 rm a.py > /dev/null 2>&1
 cat >> a.py << EOF
@@ -108,3 +101,4 @@ case $m in
 2|b) mmb ;;
 *) apys ;;
 esac
+ju
