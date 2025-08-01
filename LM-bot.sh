@@ -16,6 +16,7 @@ cat >> a.py << EOF
 print("\033[1;96m (1) Leech bot \t\t \033[1;93m(2) Mirror bot (wzml repo)\n")
 #input("\033[1;96m select >> \033]0m")
 EOF
+python a.py
 }
 command -v lolcat || pip3 install lolcat
 lb() {
