@@ -99,7 +99,7 @@ pys
 sudo chmod 777 a.py > /dev/null 2>&1
 python3 a.py
 r="\033[0mm"
-printf %s " Select : $(r)"
+printf %s " Select : $r"
 
 read m
 case $m in
