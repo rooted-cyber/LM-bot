@@ -4,7 +4,7 @@ command -v msg || bash -c "$(curl -fsSl https://gist.githubusercontent.com/roote
 pys() {
 rm a.py > /dev/null 2>&1
 cat >> a.py << EOF
-print("\033[1;96m (1) aLeech bot \t\t \033[1;93m(2) Mirror bot (wzml repo)\n")
+print("\033[1;96m (1) Leech bot \t\t \033[1;93m(2) Mirror bot (wzml repo)\n")
 EOF
 }
 command -v lolcat || pip3 install lolcat
@@ -98,10 +98,11 @@ tof Leech | lolcat
 pys
 sudo chmod 777 a.py > /dev/null 2>&1
 python3 a.py
-printf %s "\033[1;96m Select :\033[0m "
+r="\033[0mm"
+printf %s " Select : {r}"
 
 read m
 case $m in
-1|a)lb ;;
-2|b)mmb ;;
+1|a) lb ;;
+2|b) mmb ;;
 esac
