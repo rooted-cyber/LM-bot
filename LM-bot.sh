@@ -5,7 +5,7 @@ pys() {
 rm a.py > /dev/null 2>&1
 cat >> a.py << EOF
 print("\033[1;96m (1) Leech bot \t\t \033[1;93m(2) Mirror bot (wzml repo)\n")
-input("\033[1;96m select >> \033]0m")
+#input("\033[1;96m select >> \033]0m")
 EOF
 }
 command -v lolcat || pip3 install lolcat
@@ -100,7 +100,7 @@ pys
 sudo chmod 777 a.py > /dev/null 2>&1
 python3 a.py
 #r="\033[0mm"
-#printf %s " Select : $r"
+printf %s " Select : "
 
 read m
 case $m in
