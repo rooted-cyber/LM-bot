@@ -19,6 +19,7 @@ EOF
 }
 command -v lolcat || pip3 install lolcat
 lb() {
+check
 git clone https://github.com/SilentDemonSD/WZML-X mirror > /dev/null 2>&1
 rm a.py > /dev/null 2>&1
 cat >> a.py << EOF
@@ -59,6 +60,7 @@ git pull
 sudo docker build .
 }
 mmb() {
+check
 git clone https://github.com/my-fork-repo/mirror-leech-telegram-bot mirror > /dev/null 2>&1
 rm a.py > /dev/null 2>&1
 cat >> a.py << EOF
