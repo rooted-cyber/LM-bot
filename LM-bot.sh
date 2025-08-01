@@ -3,13 +3,12 @@ command -v msg || bash -c "$(curl -fsSl https://gist.githubusercontent.com/roote
 pys() {
 rm a.py > /dev/null 2>&1
 cat >> a.py << EOF
-print("\033[1;96m (1) Leech bot \t\t \033[1;93m(2) Mirror bot (Anasty repo)\n")
+print("\033[1;96m (1) Leech bot \t\t \033[1;93m(2) Mirror bot (wzml repo)\n")
 EOF
 }
 command -v lolcat || pip3 install lolcat
-clear
 lb() {
-git clone https://github.com/my-fork-repo/mirror-leech-telegram-bot mirror > /dev/null 2>&1
+git clone https://github.com/SilentDemonSD/WZML-X mirror > /dev/null 2>&1
 rm a.py > /dev/null 2>&1
 cat >> a.py << EOF
 from random import choice as c
