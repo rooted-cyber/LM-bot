@@ -9,4 +9,5 @@
 </pre>
 
 ## Direct installation in vps
-```bash -c "$(curl -fsSl https://raw.githubusercontent.com/rooted-cyber/LM-bot/refs/heads/main/LM-bot.sh)"```
+```
+bash -c "$(curl -fsSl https://raw.githubusercontent.com/rooted-cyber/LM-bot/refs/heads/main/LM-bot.sh)"```
